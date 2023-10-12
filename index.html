@@ -2,4 +2,20 @@
 <head>
 <title>Random Number Generator</title>
 </head>
+<body>
+  <button id="generateButton">Generate Random Number</button>
+  <p id-"randomNumber"></p>
+
+  <scrpit>
+    var button = document.getElementById("generateButton");
+    var paragraph = document.getElementById("randomNumber");
+
+    function generaateRandomNumber(){
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
+    paragraph.textContent = "Random Number: " + randomNumber;
+    }
+
+    button.addEventListener("click", generateRandomNumber);
+  </scrpit>
+</body>
 </html>
